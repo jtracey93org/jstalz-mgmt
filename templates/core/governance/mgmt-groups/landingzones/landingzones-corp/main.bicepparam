@@ -308,54 +308,55 @@ param parPolicyAssignmentParameterOverrides = {
   'Audit-PeDnsZones': {
     privateLinkDnsZones: {
       value: [
-        'privatelink.azurecr.io'                          // Azure Container Registry
-        'privatelink.azurewebsites.net'                   // Azure App Service & Function Apps
-        'privatelink.guestconfiguration.azure.com'       // Azure Arc Guest Configuration
-        'privatelink.his.arc.azure.com'                  // Azure Arc Hybrid Resource Provider
+        'test.int' // internal custom DNS zone for testing
+        'privatelink.azurecr.io' // Azure Container Registry
+        'privatelink.azurewebsites.net' // Azure App Service & Function Apps
+        'privatelink.guestconfiguration.azure.com' // Azure Arc Guest Configuration
+        'privatelink.his.arc.azure.com' // Azure Arc Hybrid Resource Provider
         'privatelink.dp.kubernetesconfiguration.azure.com' // Azure Arc Kubernetes Configuration
-        'privatelink.siterecovery.windowsazure.com'      // Azure Site Recovery
-        'privatelink.azure-automation.net'               // Azure Automation DSC Hybrid & Webhook
-        'privatelink.batch.azure.com'                    // Azure Batch
-        'privatelink.directline.botframework.com'        // Azure Bot Service
-        'privatelink.search.windows.net'                 // Azure Cognitive Search
-        'privatelink.cognitiveservices.azure.com'        // Azure Cognitive Services
-        'privatelink.cassandra.cosmos.azure.com'         // Azure Cosmos DB Cassandra
-        'privatelink.gremlin.cosmos.azure.com'           // Azure Cosmos DB Gremlin
-        'privatelink.mongo.cosmos.azure.com'             // Azure Cosmos DB MongoDB
-        'privatelink.documents.azure.com'                // Azure Cosmos DB SQL API
-        'privatelink.table.cosmos.azure.com'             // Azure Cosmos DB Table
-        'privatelink.adf.azure.com'                      // Azure Data Factory Portal
-        'privatelink.datafactory.azure.net'              // Azure Data Factory
-        'privatelink.azuredatabricks.net'                // Azure Databricks
-        'privatelink.eventgrid.azure.net'                // Azure Event Grid (domains & topics)
-        'privatelink.servicebus.windows.net'             // Azure Event Hub & Service Bus
-        'privatelink.afs.azure.net'                      // Azure Files
-        'privatelink.azurehdinsight.net'                 // Azure HDInsight
-        'privatelink.azureiotcentral.com'                // Azure IoT Central
-        'privatelink.api.adu.microsoft.com'              // Azure IoT Device Update
-        'privatelink.azure-devices.net'                  // Azure IoT Hubs
-        'privatelink.azure-devices-provisioning.net'     // Azure IoT Device Provisioning
-        'privatelink.vaultcore.azure.net'                // Azure Key Vault
-        'privatelink.api.azureml.ms'                     // Azure Machine Learning Workspace
-        'privatelink.notebooks.azure.net'                // Azure Machine Learning Workspace (notebooks)
-        'privatelink.grafana.azure.com'                  // Azure Managed Grafana
-        'privatelink.media.azure.net'                    // Azure Media Services
-        'privatelink.prod.migration.windowsazure.com'    // Azure Migrate
-        'privatelink.monitor.azure.com'                  // Azure Monitor
-        'privatelink.oms.opinsights.azure.com'           // Azure Monitor OMS
-        'privatelink.ods.opinsights.azure.com'           // Azure Monitor ODS
-        'privatelink.agentsvc.azure-automation.net'      // Azure Monitor Agent Service
-        'privatelink.redis.cache.windows.net'            // Azure Redis Cache
-        'privatelink.service.signalr.net'                // Azure SignalR
-        'privatelink.blob.core.windows.net'              // Azure Storage Blob & related services
-        'privatelink.dfs.core.windows.net'               // Azure Storage DFS
-        'privatelink.file.core.windows.net'              // Azure Storage File
-        'privatelink.queue.core.windows.net'             // Azure Storage Queue
-        'privatelink.table.core.windows.net'             // Azure Storage Table
-        'privatelink.web.core.windows.net'               // Azure Storage Static Web
-        'privatelink.dev.azuresynapse.net'               // Azure Synapse Dev
-        'privatelink.sql.azuresynapse.net'               // Azure Synapse SQL
-        'privatelink.wvd.microsoft.com'                  // Azure Virtual Desktop
+        'privatelink.siterecovery.windowsazure.com' // Azure Site Recovery
+        'privatelink.azure-automation.net' // Azure Automation DSC Hybrid & Webhook
+        'privatelink.batch.azure.com' // Azure Batch
+        'privatelink.directline.botframework.com' // Azure Bot Service
+        'privatelink.search.windows.net' // Azure Cognitive Search
+        'privatelink.cognitiveservices.azure.com' // Azure Cognitive Services
+        'privatelink.cassandra.cosmos.azure.com' // Azure Cosmos DB Cassandra
+        'privatelink.gremlin.cosmos.azure.com' // Azure Cosmos DB Gremlin
+        'privatelink.mongo.cosmos.azure.com' // Azure Cosmos DB MongoDB
+        'privatelink.documents.azure.com' // Azure Cosmos DB SQL API
+        'privatelink.table.cosmos.azure.com' // Azure Cosmos DB Table
+        'privatelink.adf.azure.com' // Azure Data Factory Portal
+        'privatelink.datafactory.azure.net' // Azure Data Factory
+        'privatelink.azuredatabricks.net' // Azure Databricks
+        'privatelink.eventgrid.azure.net' // Azure Event Grid (domains & topics)
+        'privatelink.servicebus.windows.net' // Azure Event Hub & Service Bus
+        'privatelink.afs.azure.net' // Azure Files
+        'privatelink.azurehdinsight.net' // Azure HDInsight
+        'privatelink.azureiotcentral.com' // Azure IoT Central
+        'privatelink.api.adu.microsoft.com' // Azure IoT Device Update
+        'privatelink.azure-devices.net' // Azure IoT Hubs
+        'privatelink.azure-devices-provisioning.net' // Azure IoT Device Provisioning
+        'privatelink.vaultcore.azure.net' // Azure Key Vault
+        'privatelink.api.azureml.ms' // Azure Machine Learning Workspace
+        'privatelink.notebooks.azure.net' // Azure Machine Learning Workspace (notebooks)
+        'privatelink.grafana.azure.com' // Azure Managed Grafana
+        'privatelink.media.azure.net' // Azure Media Services
+        'privatelink.prod.migration.windowsazure.com' // Azure Migrate
+        'privatelink.monitor.azure.com' // Azure Monitor
+        'privatelink.oms.opinsights.azure.com' // Azure Monitor OMS
+        'privatelink.ods.opinsights.azure.com' // Azure Monitor ODS
+        'privatelink.agentsvc.azure-automation.net' // Azure Monitor Agent Service
+        'privatelink.redis.cache.windows.net' // Azure Redis Cache
+        'privatelink.service.signalr.net' // Azure SignalR
+        'privatelink.blob.core.windows.net' // Azure Storage Blob & related services
+        'privatelink.dfs.core.windows.net' // Azure Storage DFS
+        'privatelink.file.core.windows.net' // Azure Storage File
+        'privatelink.queue.core.windows.net' // Azure Storage Queue
+        'privatelink.table.core.windows.net' // Azure Storage Table
+        'privatelink.web.core.windows.net' // Azure Storage Static Web
+        'privatelink.dev.azuresynapse.net' // Azure Synapse Dev
+        'privatelink.sql.azuresynapse.net' // Azure Synapse SQL
+        'privatelink.wvd.microsoft.com' // Azure Virtual Desktop
         // Add more DNS zone names to audit as needed
       ]
     }
